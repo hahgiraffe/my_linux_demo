@@ -21,7 +21,7 @@ int main(int argc,char *argv[]){
     if(addr==MAP_FAILED){
         printf("mmap error\n");
     }
-    if(write(STDOUT_FILENO,addr,sb.st_size)!=sb.st_size){
+    if(write(1,addr,sb.st_size)!=sb.st_size){
         printf("write error\n");
     }
     exit(0);
