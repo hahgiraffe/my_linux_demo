@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 //共享文件映射例子，可直接反映到底层的映射文件
-#define MEMSIZE 10
+#define MEMSIZE 100
 int main(int argc,char *argv[]){
     if(argc<2){
         printf("input argc error\n");
